@@ -1,0 +1,116 @@
+/*
+  Vocabulary:
+  - Declaration: Set of property names and values
+  - Declaration Block: declarations with { } 
+  - Rule or Ruleset: selector(s) + declaration block
+*/
+* {
+  color: red;
+}
+
+/* All selectors using * */
+
+/* Selectors via element */
+img {
+  width: 300px;
+  border: 2px solid black;
+}
+img {
+  border-color: green;
+  border-width: 10px;
+}
+
+/* Selectors via class */
+.photo {
+  border-color: orange;
+}
+
+/* Selectors via id */
+#js {
+  border-color: purple;
+  /* Purple is overwritten, but border-width got carried over */
+}
+
+/* Multiple selectors */
+/*
+  Find be all the elements that have 
+  the ingredients class
+  AND
+  the instructions class 
+*/
+.ingredients.instructions {
+  font-size: 200px;
+}
+
+/* Find all the H2 elements AND have the class of red */
+h2.red {
+  color: red;
+}
+
+/* find me the ol elements AS WELL AS the ul elements */
+ol,
+ul {
+  color: blue;
+}
+
+/*
+  Inside of the element of class .section-ingredients, 
+  find me all li's.
+*/
+.section-ingredients li {
+  background-color: palegoldenrod;
+}
+
+/*
+  Specificity:
+  If multiple rulesets reach the same
+  element, the most specific one takes
+  prescidence, even if they're out of order.
+
+  In case you're wondering, you can use this chart:
+  http://www.standardista.com/css3/css-specificity/
+
+  PRO-TIP: Or order your selectors
+  from most generic to most specific instead.
+*/
+
+/* 
+  find me all the section elements WHOSE DESCENDANTS have an li.
+ */
+section li {
+  background-color: pink;
+}
+
+/* 
+  find me all the section elements WHOSE CHILDREN 
+  (not GRANDCHILDREN OR ANYTHING ELSE) have an li.
+ */
+section > li {
+  background-color: fuchsia;
+}
+
+/*
+  Psuedo-classes
+  Used to define a special state of the element
+*/
+
+/* Anchor pseudo-classes: */
+a:hover {
+  background-color: red;
+  color: white;
+}
+
+/* :visited, :hover, :active */
+/* Selectors by attribute */
+li:hover {
+  background-color: red;
+  color: white;
+}
+
+/* :first-child, :last-child, :nth-child(2) */
+/* get me every other li element, with an offset of 1 */
+li:nth-child(2n + 1) {
+  background-color: lightblue;
+}
+
+/* !important - FOR THE LOVE OF GOD, DO NOT DO THIS */

@@ -1,0 +1,81 @@
+@use 'partials/color' as *;
+@use 'partials/reset' as *;
+@use 'partials/fonts' as *;
+@use 'partials/mixins' as *;
+
+$default-margin: 0 10px;
+$default-radius: 25px;
+
+.header {
+    @include flex-container-with-margin(10px);
+    align-items: center;
+
+    &__logo {
+        background: url('../assets/images/logo.svg');
+        width: 50px;
+        height: 50px;
+        margin: $default-margin;
+    }
+
+    &__banner {
+        font-family: 'Bebas Kai';
+        font-size: 24px;
+        margin: $default-margin;
+        color: $primary-color;
+    }
+}
+
+.filter-bar {
+    @include flex-container-with-margin(10px);
+
+    &__button {
+        border-radius: $default-radius;
+        background-color: $primary-color;
+        border: 2px solid $primary-color;
+        color: white;
+        padding: 12px;
+        margin: $default-margin;
+        cursor: pointer;
+
+        &:hover {
+            background: $primary-hover-color;
+        }
+
+        &:active {
+            background: $primary-select-color;
+        }
+
+        &--selected {
+            border: 2px solid $primary-color;
+            color: $primary-color;
+            background-color: white;
+            font-weight: bold;
+        }
+
+        &--horror {
+            color: darkred;
+            border-color: darkred;        
+        }
+
+        &--thriller {
+            color: slategray;
+            border-color: slategray;        
+        }
+
+        &--comedy {
+            color: rgb(70, 160, 157);
+            border-color: rgb(70, 160, 157);        
+        }
+
+        &--musical {
+            color: gold;
+            border-color: gold;
+        }
+    }
+}
+
+.footer {
+    @extend .header;
+    position: fixed;
+    bottom: 0;
+}

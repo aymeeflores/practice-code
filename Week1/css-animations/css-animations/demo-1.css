@@ -1,0 +1,120 @@
+body {
+  background-color: #2f4858;
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  background-color: #f26419;
+  /* transition-duration: 1s;
+  transition-property: width, background-color;
+  transition-delay: 0; */
+
+  /* if I just want the purple border to be placed on top on hover: */
+  border: 10px solid transparent;
+
+  /* 1s 2500ms background ease-in; */
+  /* transition: 1s 0 width ease-in; */
+  transition: width 1s, background-color 1s;
+}
+
+.link {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2rem;
+  color: #33658a;
+  transition-duration: 1s;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #f6ae2d;
+  text-decoration: underline;
+}
+
+.square:hover {
+  /* border: 10px solid purple; */
+  background-color: #86bbd8;
+  width: 400px;
+  /* transform: rotate(35deg); */
+  cursor: pointer;
+
+  /* Turns out animating borders is A Whole Thing :( */
+  /* https://css-tricks.com/animating-border/ */
+}
+
+/* LEVEL 1: MUST KNOW, THE :HOVER PSUEDO-CLASS */
+/* TO DO: 
+    - add .link hover to #f6ae2d
+    - add .square hover background-color to #86bbd8
+    - add .square hover transform to rotate(45deg)
+ */
+
+/* TO DO: make default link w/ no underline, but underline on hover */
+
+/* LEVEL 2: SHOULD KNOW */
+/* 
+    TO DO: 
+    - add CSS property transition-duration to .link and .square with
+      different values: 1s, 500, 100, 10ms
+    - add transition-property to .link with different properties:
+      "color", "text-decoration". Which works, which doesn't?
+    - add transition-property to .square with different properties:
+      "background-color", "transform", "background-color, transform".
+*/
+
+/* LEVEL 3: NICE TO KNOWS */
+/*
+   TO DO:
+    - show demo by commenting out display: none; below
+    - compare and contrast the different timing functions
+    - check out how it looks in Chrome tools!
+    - show transition-delay: 2s
+      "How long do we wait until this transition actually happens?"
+    - Show transition CSS property shorthand:
+      "1s 2500ms background ease-in;"
+      "1s background ease-in, 500ms transform ease-out 1s;"
+*/
+
+/* .ease-demo {
+  display: none;
+} */
+
+.ease-demo__box {
+  width: 100px;
+  height: 100px;
+  display: block;
+  background-color: #33658a;
+  color: #86bbd8;
+  margin: 1rem;
+  transition-duration: 4s;
+  transition-property: width;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ease-demo:hover .ease-demo__box {
+  width: 600px;
+  /* background-color: red; */
+}
+
+.ease-demo__box--linear {
+  transition-timing-function: linear;
+}
+
+.ease-demo__box--ease-in {
+  transition-timing-function: ease-in;
+}
+
+.ease-demo__box--ease-out {
+  transition-timing-function: ease-out;
+}
+
+.ease-demo__box--ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+
+/*
+    PRO-TIP: for performance issues, try to limit animations
+    to transforms and opacity
+*/

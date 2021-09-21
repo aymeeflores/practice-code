@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "Naftera";
+  src: url("./fonts/naftera/naftera_display_solid-webfont.woff2")
+      format("woff2"),
+    url("./fonts/naftera/naftera_display_solid-webfont.woff") format("woff"),
+    url("./fonts/naftera/naftera_display_solid-webfont.ttf") format("ttf");
+}
+
+/* 
+    TO DO:
+    Use @font-face to add the Naftera font, a font we downloaded into our
+    project folders
+*/
+
+body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #111;
+}
+
+body {
+  color: goldenrod;
+  font-size: 2rem;
+}
+
+h1 {
+  text-align: center;
+  font-family: "naftera";
+}

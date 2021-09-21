@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/button-gallery.css" />
+  <title>Button Gallery</title>
+</head>
+
+<body>
+  <!-- TO DO: Add BLOCKS, ELEMENTS, AND MODIFIERS TO ALL BUTTONS -->
+  <!-- 
+    block
+    this_block
+    element
+    modifier
+
+    .this_block__element--modifer
+  -->
+
+  <!-- Add a button block and elements to this. No need for modifiers yet -->
+  <a href="https://css-tricks.com" class="btn">
+    <span class="btn__text">Standard button</span>
+  </a>
+
+  <!-- <button>LIKE THIS!</button> -->
+
+  <!-- Same as before, but let's add an ORANGE modifier and a BIG modifier -->
+  <a href="https://css-tricks.com" class="btn btn--big btn--orange">
+    <span class="btn__price">$3</span>
+    <!-- if I wanted to created a big modifier on the text element,
+    we can call it .btn__text--big -->
+    <span class="btn__text">Big button</span>
+  </a>
+
+  <!-- Same as previous, but let's make it blue. -->
+  <!--
+    We _could_ make a class called .big-obnoxious-blue-button
+    that has all the CSS that makes it a button, big, and blue,
+    but what are the downsides of that if we needed to make a 
+    variation on any parts of the button?
+   -->
+  <a href="https://css-tricks.com" class="big-obnoxious-blue-button">
+    <span class="">$4</span>
+    <span class="">Big button</span>
+  </a>
+
+  <!-- Same as previous, but let's make it green. -->
+  <a href="https://css-tricks.com" class="btn btn--big btn--green">
+    <span class="btn__price">$9</span>
+    <span class="btn__text">Big button</span>
+  </a>
+
+  <!-- Credit: https://css-tricks.com/bem-101/ -->
+  <!-- Credit: https://codepen.io/team/css-tricks/pen/226a65c8f7d64615aabd45048d1d3b6d -->
+</body>
+
+</html>

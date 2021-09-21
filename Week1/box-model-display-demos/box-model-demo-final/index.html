@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo: CSS Box Model</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <!-- Step 1: Here we have a simple HTML page with no CSS. Let's some CSS so that an element's height and width will include any border and padding that we add. -->
+  <body>
+    <!-- Border Demo -->
+    <h2>Working With Borders</h2>
+    <!-- Step 2: Here's a div. Let's put a border around it!-->
+    <!-- Step 3: On hover, let's change the background color of this div. -->
+    <div class="border-example"></div>
+
+    <!-- Border vs. Outline Demo -->
+    <h2>Working With Outlines</h2>
+    <!-- Step 4: Let's add both border and outline CSS properties to this button. What do you notice? -->
+    <button class="outline-example">Button Text</button>
+
+    <!-- Padding Demo -->
+    <h2>Padding Demo</h2>
+    <!-- Step 5: Let's add some padding to this element using both shorthand and longhand syntax for padding properties. -->
+    <div class="padding-example">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
+      praesentium eum deserunt libero nulla blanditiis consectetur eligendi
+      mollitia nobis ipsa, nemo itaque! Reiciendis nulla accusantium sint nihil
+      minima consectetur cupiditate.
+    </div>
+
+    <!-- Box-Sizing Demo -->
+    <h2>Working With Box Sizing</h2>
+    <!-- Step 6: To illustrate why the box-sizing property is useful, let's apply the same height, width, border, padding, margin, and background color to these two container divs, and to the two child divs. The only thing we will change is the box-sizing property. What do you notice? -->
+    <div class="box-sizing box-sizing-content-example">
+      <div class="child">Content text</div>
+    </div>
+    <div class="box-sizing box-sizing-border-example">
+      <div class="child">Content text</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+/* To do: Add styles, but use BEM conventions. */
+
+/*
+  FIXME: Along with all the other classes to add,
+  rename this class below. 
+*/
+.main-article--special {
+  background-color: #006;
+  color: white;
+}
+
+.main-article__photo {
+  /* width: 300px; */
+  border: 2px solid purple;
+}
+
+.main-article__photo--small {
+  width: 150px;
+}
+
+.main-article__photo--medium {
+  width: 300px;
+}
+
+.main-article__photo--large {
+  width: 600px;
+}

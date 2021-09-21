@@ -1,0 +1,47 @@
+/* This rule set will apply to all text elements on the page */
+/* Step 2: Let's add some CSS that will tell the browser that the width and height should include any padding and border that we add. Let's also tell the browser to get rid of the default margins and padding of HTML elements. */
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* This will apply to all elements with the class of box. */
+.box {
+  width: 50vw;
+  height: 25vh;
+
+  /* Step 3: Let's add a margin of 1rem around all sides of each of these elements.*/
+  margin: 1rem;
+
+  /* Step 4: Let's add a uniformly styled border on each side of each of these elements.  */
+  border: 2px solid grey;
+  border-radius: 5px;
+
+  /* Step 5: Let's add uniform padding in between the border and the content of each of these elements. */
+  padding: 1rem;
+}
+
+/* This will apply to all elements with the class of box-1. */
+.box-1 {
+  background-color: #511281;
+  /* Step 6: Let's add different margins on each side of this element. */
+  /* TRouBLe: When using the following syntax for assigning margins or padding to an element, the properties will be applied to the Top, Right, Bottom, and Left*/
+  margin: 10px 0 5px 50px;
+  /* When using the following syntax for assigning margins or padding to an element, the first value will be applied to the top and bottom, the second value will be applied to the right and left. margin: 0 auto will center an element horizontally within its parent. */
+  margin: 0 auto;
+  /* You can also assign margins and padding using margin-top, margin-right, margin-bottom, margin-left, padding-top, padding-right, padding-bottom, padding-left */
+  padding-left: 150px;
+  padding-top: 50px;
+}
+
+/* This will apply to all elements with the class of box-2. */
+.box-2 {
+  background-color: #4ca1a3;
+}
+
+/* This will apply to all elements with the class of box-3. */
+.box-3 {
+  background-color: #a5e1ad;
+}

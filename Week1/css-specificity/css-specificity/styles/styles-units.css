@@ -1,0 +1,54 @@
+/*
+  THE ABSOLUTE UNITS
+  - px, cm, inches, mm
+ */
+* {
+  /*
+    20 pixels may be larger than the default font size, but
+    if someone visually impaired has their browser set at 36px?
+    That would make the text smaller :|
+  */
+  /* font-size: 20px; */
+
+  /*
+    em:  relative to the font-size of its direct or nearest parent 
+    rem: relative to the html (root) font-size
+  */
+  font-size: 1.4rem;
+  /* 1.4 x 16 pixels, the default browser size */
+  /* which means visually you see it at 22.4px  */
+}
+
+body {
+  width: 100vw;
+  border: 1px solid red;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+
+  /*
+    "make this 50% of the parent element, which would be the
+    section tag in line 26 of index.html."
+  */
+  /* width: 50%; */
+
+  /* "make this the width of 50% of the viewport (web browser.) */
+  width: 50vw;
+
+  /*
+    "make this h1 50% of the viewport, or 400 pixels,
+    whatever is SMALLER.
+  */
+  /* max-width: 400px; */
+}
+
+img {
+  width: 200px;
+}
+
+section {
+  border: 1px solid grey;
+  width: 600px;
+}

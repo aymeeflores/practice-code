@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo: CSS Display</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Three div elements with default block display.  -->
+    <h2 class="heading" id="block-header">Block Elements</h2>
+    <section class="example-block-container">
+      <div class="example-block">Hello.</div>
+      <div class="example-block">Hello.</div>
+      <div class="example-block">Hello.</div>
+    </section>
+
+    <!-- Two span elements with default inline display. -->
+    <h2 class="heading">Inline Elements</h2>
+    <section class="example-inline-container">
+      <h2 class="example-inline">
+        Example Inline (<span class="highlight">New</span> and
+        <span class="attention">Improved</span>!)
+      </h2>
+    </section>
+
+    <!-- A nav containing a ul with three li elements. We will override their default block display and instead set the display to inline-block. -->
+    <h2 class="heading">Inline-Block Elements</h2>
+    <nav class="example-ib-container">
+      <ul class="menu-list">
+        <li class="menu-list-item"><a href="#block-header">Home |</a></li>
+        <li class="menu-list-item"><a href="#">About Us |</a></li>
+        <li class="menu-list-item"><a href="#">Contact |</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

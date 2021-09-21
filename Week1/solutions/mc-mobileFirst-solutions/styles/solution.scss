@@ -1,0 +1,148 @@
+$desktop: 1024px;
+$header-background: #fff;
+$body-background: #dcc6bf;
+$footer-background: #132d34;
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../fonts/Quicksand-Regular.ttf');
+}
+
+@mixin primary-font {
+  font-family: 'Quicksand';
+  font-weight: light;
+}
+
+@mixin hero-margin {
+  margin: 0 4rem;
+  @media (min-width: $desktop) {
+    margin: 0 6rem;
+  }
+}
+
+@mixin outer-margin {
+  margin: 0 3rem;
+  @media (min-width: $desktop) {
+    margin: 0 5rem;
+  }
+}
+
+@mixin h1 {
+  @include primary-font;
+  @include hero-margin;
+  font-size: 36px;
+
+  @media (min-width: $desktop) {
+    font-size: 60px;
+  }
+}
+
+@mixin h2 {
+  @include primary-font;
+  font-size: 18px;
+
+  @media (min-width: $desktop) {
+    font-size: 24px;
+  }
+}
+
+@mixin nav-links {
+  @include primary-font;
+  font-size: 14px;
+  list-style: none;
+  display: none;
+
+  @media (min-width: $desktop) {
+    font-size: 16px;
+    display: inline-flex;
+  }
+}
+
+@mixin flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin hamburger {
+  display: block;
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+li {
+  padding-left: 1rem;
+}
+
+.header {
+  @include outer-margin;
+  @include flex-align-center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  &__links {
+    @include flex-align-center;
+    @include nav-links;
+  }
+  &__logo {
+    @include h2;
+  }
+  &__hamburger {
+    @media (min-width: $desktop) {
+      display: none;
+    }
+  }
+}
+
+.hero {
+  @include flex-align-center;
+  background-image: url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  &__heading {
+    color: white;
+    @include h1;
+  }
+  @media (min-width: $desktop) {
+    height: 80vh;
+  }
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  background: $body-background;
+  &__content {
+    padding: 2rem;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
+    justify-content: center;
+  }
+  &__heading {
+    @include primary-font;
+  }
+}
+
+.footer {
+  @include primary-font;
+  @include flex-align-center;
+  justify-content: center;
+  background: $footer-background;
+  height: 5rem;
+  &__text {
+    color: white;
+  }
+}

@@ -1,0 +1,126 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Bebas Kai";
+  src: url("../assets/fonts/BebasKai.eot");
+  src: url("../assets/fonts/BebasKai.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/BebasKai.woff2") format("woff2"), url("../assets/fonts/BebasKai.woff") format("woff"), url("../assets/fonts/BebasKai.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.header, .footer {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+}
+.header__logo {
+  background: url("../assets/images/logo.svg");
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+}
+.header__banner {
+  font-family: "Bebas Kai";
+  font-size: 24px;
+  margin: 0 10px;
+  color: yellowgreen;
+}
+
+.filter-bar {
+  display: flex;
+  margin: 10px;
+}
+.filter-bar__button {
+  border-radius: 25px;
+  background-color: yellowgreen;
+  border: 2px solid yellowgreen;
+  color: white;
+  padding: 12px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.filter-bar__button:hover {
+  background: #b8d87a;
+}
+.filter-bar__button:active {
+  background: #74a11a;
+}
+.filter-bar__button--selected {
+  border: 2px solid yellowgreen;
+  color: yellowgreen;
+  background-color: white;
+  font-weight: bold;
+}
+.filter-bar__button--horror {
+  color: darkred;
+  border-color: darkred;
+}
+.filter-bar__button--thriller {
+  color: slategray;
+  border-color: slategray;
+}
+.filter-bar__button--comedy {
+  color: #46a09d;
+  border-color: #46a09d;
+}
+.filter-bar__button--musical {
+  color: gold;
+  border-color: gold;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+}/*# sourceMappingURL=style.css.map */

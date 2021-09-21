@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Bebas Kai';
+    src: url('../assets/fonts/BebasKai.eot');
+    src: url('../assets/fonts/BebasKai.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/BebasKai.woff2') format('woff2'),
+        url('../assets/fonts/BebasKai.woff') format('woff'),
+        url('../assets/fonts/BebasKai.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}

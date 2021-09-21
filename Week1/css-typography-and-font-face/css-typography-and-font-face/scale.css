@@ -1,0 +1,42 @@
+/*
+    REMINDER:
+    We are using the Live Sass Compiler by Glenn Marks as
+    a VS Code extension, which means WE ARE NOT TOUCHING
+    SCALE.CSS -- THAT FILE IS AUTOMAGICALLY BEING GENERATED.
+    YES, AUTOMAGICALLY.
+*/
+/*
+    Reference:
+    https://www.rawkblog.com/2018/05/modular-scale-typography-with-css-variables-and-sass/
+ */
+/* it's a math thing. Google it. */
+/* Calculate values */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+
+h4 {
+  font-size: 1.68rem;
+}
+
+h3 {
+  font-size: 2.8224rem;
+}
+
+h2 {
+  font-size: 4.741632rem;
+}
+
+h1 {
+  font-size: 7.96594176rem;
+}
+
+article {
+  width: 40vw;
+  margin: 0 auto;
+}/*# sourceMappingURL=scale.css.map */

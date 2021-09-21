@@ -1,0 +1,52 @@
+/*
+    REMINDER:
+    We are using the Live Sass Compiler by Glenn Marks as
+    a VS Code extension, which means WE ARE NOT TOUCHING
+    SCALE.CSS -- THAT FILE IS AUTOMAGICALLY BEING GENERATED.
+    YES, AUTOMAGICALLY.
+*/
+
+/*
+    Reference:
+    https://www.rawkblog.com/2018/05/modular-scale-typography-with-css-variables-and-sass/
+ */
+
+$font-size: 1rem;
+$ratio: 1.333;
+$golden-ratio: 1.68; /* it's a math thing. Google it. */
+$line-height: 1.8rem;
+
+/* Calculate values */
+$h4: $font-size * $golden-ratio;
+$h3: $h4 * $golden-ratio;
+$h2: $h3 * $golden-ratio;
+$h1: $h2 * $golden-ratio;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+h4 {
+  font-size: $h4;
+}
+
+h3 {
+  font-size: $h3;
+}
+
+h2 {
+  font-size: $h2;
+}
+
+h1 {
+  font-size: $h1;
+}
+article {
+  width: 40vw;
+  margin: 0 auto;
+}

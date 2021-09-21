@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: "Press Start 2P", cursive;
+  text-shadow: 2px 2px aqua;
+  background-color: #000;
+  color: hotpink;
+  text-align: center;
+}
+ul,
+li,
+h1,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 2rem;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 650px;
+  margin: 0 auto;
+}
+li {
+  list-style-type: none;
+}
+h3 {
+  text-align: center;
+}
+.staff-thumbnail {
+  margin: 2rem 2rem 0 2rem;
+  width: 160px;
+  height: 160px;
+  background-size: cover;
+  border-radius: 50%;
+  border: 10px solid aqua;
+}
+
+.cece {
+  background-image: url(https://brainstation-public-uploads.s3.amazonaws.com/profile-images/d0c8b84a-16bf-4bef-8d93-f5f137990713.png);
+}
+
+.ernie {
+  background-image: url(https://brainstation-public-uploads.s3.amazonaws.com/profile-images/030834ed-f62f-4932-946e-d0858fd4ced0.png);
+}
+
+.will {
+  background-image: url(https://brainstation-public-uploads.s3.amazonaws.com/profile-images/b3e2ba67-1afc-493c-836d-b5af4d84a9a7.png);
+}
+
+.anvit {
+  background-image: url(https://portal-assets-prod.s3.amazonaws.com/photos/4207/sizes/500.c84e551d28fba809f6d61c2374ff059967ec3575.jpg);
+}
+
+.roberto {
+  background-image: url(https://bbf51443-6553-4bf5-8aa0-35cfc9876bc2.id.repl.co/roberto-thumbnail.jpeg);
+}

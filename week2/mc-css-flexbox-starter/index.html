@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="styles.css" rel="stylesheet">
+  <title>Flexbox Review</title>
+</head>
+<body>
+
+  <div class="box1 spacing">
+    <div class="center">
+      <h4>The Children need to go to their mom!</h4>
+      <h4>Put them in a line and send them to their mom with flexbox!</h4>
+    </div>
+    <div class="left">
+      <div class="child"><p>Child 1</p></div>
+      <div class="child"><p>Child 2</p></div>
+      <div class="child"><p>Child 3</p></div>
+    </div>
+    <div class="right">
+      <div class="mom"><p>Mom</p></div>
+    </div>
+  </div>
+
+  <div class="box2 spacing">
+    <div class="center">
+      <h4>The Children need a time out. Separate them.</h4>
+      <h4>Send 2 children to either end, and send the one in the middle to the bottom.</h4>
+    </div>
+    <div class="timeout">
+      <div class="timeout__child"><p>Child 1</p></div>
+      <div class="timeout__child timeout__child--bottom"><p>Child 2</p></div>
+      <div class="timeout__child"><p>Child 3</p></div>
+    </div>
+  </div>
+
+  <div class="box3 spacing">
+    <div class="center">
+      <h4>The parents want to take a family photo!</h4>
+      <h4>Position them in front of the camera with the children in front of the parents.</h4>
+    </div>
+    <div class="family-photo">
+      <div class="family-photo__kids">
+        <div class="child"><p>Child 1</p></div>
+        <div class="child"><p>Child 2</p></div>
+        <div class="child"><p>Child 3</p></div>
+      </div>
+      <div class="family-photo__parents">
+        <div class="mom"><p>Mom</p></div>
+        <div class="dad"><p>Dad</p></div>
+      </div>
+    </div>
+    <div class="camera"><p>Camera</p></div>
+  </div>
+
+  <div class="box4 spacing">
+    <div class="center">
+      <h4>Can you order the children based on their height?</h4>
+      <h4>Shortest -----> Tallest</h4>
+    </div>
+    <div class="order">
+      <div class="order__child order__child--one">
+        <p>Child 1</p>
+        <p>160cm</p>
+      </div>
+      <div class="order__child order__child--two">
+        <p>Child 2</p>
+        <p>130cm</p>
+      </div>
+      <div class="order__child order__child--three">
+        <p>Child 3</p>
+        <p>148cm</p>
+      </div>
+      <div class="order__child order__child--four">
+        <p>Child 4</p>
+        <p>130cm</p>
+      </div>
+      <div class="order__child order__child--five">
+        <p>Child 5</p>
+        <p>154cm</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="box5 spacing">
+      <div class="center">
+        <h4>All three children grew and gained some weight...</h4>
+        <h4>Put the children side by side and show that Child 2 is twice as big as Child 1 and 3.</h4>
+        <h4>Hint: They "grew"</h4>
+      </div>
+      <div class="growing">
+        <div class="growing__child growing__child--one"><p>Child 1</p></div>
+        <div class="growing__child growing__child--two"><p>Child 2</p></div>
+        <div class="growing__child growing__child--three"><p>Child 3</p></div>
+      </div>
+    </div>
+
+  <div class="box6 spacing">
+    <div class="center">
+        <h4>OH NO! The box is shrinking and the children (I know, a lot of kids...) are getting squished!!</h4>
+        <h4>Assist mom with keeping the kids in the box with flexbox. (They must be in order!)</h4>
+    </div>
+    <div class="squish">
+      <div class="child child--squish"><p>Child 20</p></div>
+      <div class="child child--squish"><p>Child 19</p></div>
+      <div class="child child--squish"><p>Child 18</p></div>
+      <div class="child child--squish"><p>Child 17</p></div>
+      <div class="child child--squish"><p>Child 16</p></div>
+      <div class="child child--squish"><p>Child 15</p></div>
+      <div class="child child--squish"><p>Child 14</p></div>
+      <div class="child child--squish"><p>Child 13</p></div>
+      <div class="child child--squish"><p>Child 12</p></div>
+      <div class="child child--squish"><p>Child 11</p></div>
+      <div class="child child--squish"><p>Child 10</p></div>
+      <div class="child child--squish"><p>Child 9</p></div>
+      <div class="child child--squish"><p>Child 8</p></div>
+      <div class="child child--squish"><p>Child 7</p></div>
+      <div class="child child--squish"><p>Child 6</p></div>
+      <div class="child child--squish"><p>Child 5</p></div>
+      <div class="child child--squish"><p>Child 4</p></div>
+      <div class="child child--squish"><p>Child 3</p></div>
+      <div class="child child--squish"><p>Child 2</p></div>
+      <div class="child child--squish"><p>Child 1</p></div>
+    </div>
+    <div>
+      <div class="mom"><p>Mom</p></div>
+    </div>
+  </div>
+
+  <div class="box7 spacing">
+    <div class="center">
+      <h4>The children are playing "THE FLOOR IS LAVA"</h4>
+      <h4>Remove the children from the lava!!!</h4>
+      <h4>Send them to their designated safe house!</h4>
+    </div>
+    <div class="safe-house-wrapper">
+      <div class="safe-house"><p>CHILD 1 SAFE HOUSE</p></div>
+      <div class="safe-house"><p>CHILD 2 & 3 SAFE HOUSE</p></div>
+    </div>
+    <div class="floor-is-lava">
+      <div class="floor-is-lava__child floor-is-lava__child--one"><p>Child 1</p></div>
+      <div class="floor-is-lava__child"><p>Child 2</p></div>
+      <div class="floor-is-lava__child"><p>Child 3</p></div>
+    </div>
+    <div>
+      <div class="red-line"><p>THE FLOOR IS LAVAAAAAA!!!!!</p></div>
+    </div>
+  </div>
+
+</body>
+</html>

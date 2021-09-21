@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine&family=Yanone+Kaffeesatz&display=swap");
+
+/*
+    TO DO:
+    Use Google Fonts @import functionality
+    to bring in matching font pairs
+*/
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+p {
+  font-family: "Domine", serif;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  width: 50vw;
+}
